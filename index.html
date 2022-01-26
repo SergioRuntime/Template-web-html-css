@@ -9,138 +9,75 @@
     <title>Exam</title>
   </head>
   <body>
+    <!--*** Start template ***-->
     <div class="exam-form">
-      <div class="exam-form-image"></div>
-      <!--*** Header image ***-->
-      <form action="enviado.html">
-        <div class="exam-form-persona-data">
-          <!--*** Name block ***-->
-          <fieldset>
-            <div class="exam-form__name">
-              <label for="quest">Nombre</label
-              ><!--*** Name ***-->
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Texto de respuesta corta"
-              />
-            </div>
-          </fieldset>
-        </div>
-        <!--*** End Name block ***-->
-        <div class="exam-form-block">
-          <!--*** First block ***-->
-          <fieldset>
-            <div class="exam-form__question">
-              <!--*** Question ***-->
-              <input
-                type="text"
-                name="quest"
-                id="quest"
-                placeholder="Texto de respuesta corta"
-              />
-            </div>
-            <div class="exam-form__options">
-              <!--*** Options ***-->
-              <input type="radio" name="option1" id="option1" />Opción 1
-              <input type="radio" name="option1" id="option2" />Opción 2
-              <input type="radio" name="option1" id="option3" />Opción 3
-            </div>
-          </fieldset>
-        </div>
-        <!--*** End First block ***-->
-        <div class="exam-form-block">
-          <!--*** Second block ***-->
-          <fieldset>
-            <div class="exam-form__question">
-              <!--*** Question ***-->
-              <input
-                type="text"
-                name="quest"
-                id="quest"
-                placeholder="Texto de respuesta corta"
-              />
-            </div>
-            <div class="exam-form__options">
-              <input type="radio" name="option2" id="option1" />Opción 1
-              <input type="radio" name="option2" id="option2" />Opción 2
-              <input type="radio" name="option2" id="option3" />Opción 3
-            </div>
-          </fieldset>
-        </div>
-        <!--*** End Second block ***-->
-        <div class="exam-form-block">
-          <!--*** Third block ***-->
-          <fieldset>
-            <div class="exam-form__question">
-              <!--*** Question ***-->
-              <input
-                type="text"
-                name="quest"
-                id="quest"
-                placeholder="Texto de respuesta corta"
-              />
-            </div>
-            <div class="exam-form__options">
-              <!--*** Options ***-->
-              <input type="radio" name="option3" id="option1" />Opción 1
-              <input type="radio" name="option3" id="option2" />Opción 2
-              <input type="radio" name="option3" id="option3" />Opción 3
-            </div>
-          </fieldset>
-        </div>
-        <!--*** End Third block ***-->
-        <div class="exam-form-block">
-          <!--*** Fourth block ***-->
-          <fieldset>
-            <div class="exam-form__question">
-              <!--*** Question ***-->
-              <input
-                type="text"
-                name="quest"
-                id="quest"
-                placeholder="Texto de respuesta corta"
-              />
-            </div>
-            <div class="exam-form__options">
-              <!--*** Options ***-->
-              <input type="radio" name="option4" id="option1" />Opción 1
-              <input type="radio" name="option4" id="option2" />Opción 2
-              <input type="radio" name="option4" id="option3" />Opción 3
-            </div>
-          </fieldset>
-        </div>
-        <!--*** End Fourth block ***-->
-        <div class="exam-form-block">
-          <!--*** Fifth block ***-->
-          <fieldset>
-            <div class="exam-form__question">
-              <!--*** Question ***-->
-              <input
-                type="text"
-                name="quest"
-                id="quest"
-                placeholder="Texto de respuesta corta"
-              />
-            </div>
-            <div class="exam-form__options">
-              <!--*** Options ***-->
-              <input type="radio" name="option1" id="option1" />Opción 1
-              <input type="radio" name="option2" id="option2" />Opción 2
-              <input type="radio" name="option3" id="option3" />Opción 3
-            </div>
-          </fieldset>
-        </div>
-        <!--*** End Fifth block ***-->
-        <div class="personal-data-buttons"><!--*** Send button ***-->
-            <input
-              class="personal-data-buttons__send"
-              type="submit"
-              value="Enviar"
-              target="__blank"
-            />
-      </form>
+      <!--*** Header ***-->
+      <div class="exam-form-title">
+        <!--*** Podrás cambiar el titulo dependiendo de la asignatura-->
+        <h1>Asignatura</h1>
+      </div>
+      <!--*** End header ***-->
+      <div class="exam-form-container">
+        <!--*** Change "path.html", it's essencial, para que puedas enviar el formulario a la ruta destino ***-->
+        <form action="path.html" method="post">
+          <!--*** Name zone ***-->
+          <!--*** En esta zona el contenido es fijo, mantenerlo sin modificar-->
+          <div class="exam-form-personal-data">
+            <fieldset>
+              <legend>Datos del alumno</legend>
+              <div class="exam-form-personal-data__name">
+                <label for="name">Nombre</label>
+                <input
+                  type="text"
+                  name="name"
+                  id="name"
+                  placeholder="Texto de respuesta corta"
+                />
+              </div>
+            </fieldset>
+          </div>
+          <!--*** End name zone ***-->
+
+          <!--*** Question zone ***-->
+          <!--*** En esta zona podrás añadir todas las preguntas de tipo test o de tipo múltiple ***-->
+          <div class="exam-form-question">
+            <fieldset>
+              <legend>Preguntas de examenes</legend>
+              <!--*** Question type test ***-->
+              <div class="exam-form-question-test">
+                <!--*** Modificar el texto siguiente para cambiar la pregunta ***-->
+                <h3>Pregunta del examen:</h3>
+                <!--*** Modificar las opciones dependiendo de la pregunta ***-->
+                <div class="exam-form-question-test__options">
+                  <input type="radio" name="option1" id="option1" />Opción 1
+                  <input type="radio" name="option1" id="option2" />Respuesta
+                  correcta
+                  <input type="radio" name="option1" id="option3" />Opción 3
+                </div>
+              </div>
+              <!--*** End question type test ***-->
+
+              <!--*** Question type multiple ***-->
+              <div class="exam-form-question-multiple__content">
+                <!--*** Modificar el texto siguiente para cambiar la pregunta ***-->
+                <h3>Pregunta del examen:</h3>
+                <!--*** Modificar las opciones dependiendo de la pregunta ***-->
+                <div class="exam-form-block__options">
+                  <input type="checkbox" name="option1" id="option1" />Respuesta
+                  correcta
+                  <input type="checkbox" name="option2" id="option2" />Opción 2
+                  <input type="checkbox" name="option3" id="option3" />Respuesta
+                  correcta
+                </div>
+              </div>
+              <!--*** End question type multiple ***-->
+              <!--*** Aqui puedes añadir más question de tipo múltiple o test ***-->
+            </fieldset>
+          </div>
+          <!--*** End question zone ***-->
+        </form>
+      </div>
     </div>
+    <!--*** End template ***-->
   </body>
 </html>
