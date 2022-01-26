@@ -1,23 +1,107 @@
-.exam-form-image {
-    height: 193px;
+.exam-form {
     width: 770px;
-    margin-bottom: 16px;
 }
 
-.exam-form-container {
-    min-width: 250px;
-    word-wrap: break-word;
+.exam-form-title {
+    width: 100%;
+    height: 193px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(255, 255, 255);
+    border-left-color: rgb(218, 220, 224);
+    border-left-style: solid;
+    border-left-width: 1px;
+    border-right-color: rgb(218, 220, 224);
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-color: rgb(218, 220, 224);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-top-style: solid;
+    border-top-width: 1px;
+    border-bottom-color: rgb(218, 220, 224);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
+
+.exam-form-title h1 {
+    font-size: 36px;
+    font-weight: 400;
+}
+
+#form1 {
+    margin-top: 16px;
 }
 
 .exam-form-personal-data {
-    width: 100%;
+    height: 138px;
 }
 
-.exam-form-personal-data__name label {
-    margin: 16px 0;
+.exam-form-personal-data fieldset {
+    border-left: none;
+    border-top: 1px solid black;
+    border-bottom: none;
+    border-right: none;
+}
+
+.exam-form-personal-data legend {
+    padding-right: 4px;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: 0.1px;
 }
 
 .exam-form-personal-data__name {
     display: flex;
     flex-direction: column;
+    margin-top: 4px;
+    border-left: 8px solid rgb(66, 133, 244);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: rgb(255, 255, 255);
+}
+
+.exam-form-personal-data__labelcontent {
+    margin: 24px 24px 0 24px;
+}
+
+.exam-form-personal-data__content label {
+    font-size: 24px;
+    font-weight: 400;
+    cursor: text;
+    color: #333;
+    height: 24px;
+    letter-spacing: 0.1px;
+    margin: 0;
+}
+
+.exam-form-personal-data__inputcontent {
+    margin: 24px;
+    width: 360px;
+}
+
+.exam-form-personal-data__inputcontent input {
+    font-size: 14px;
+    height: 20px;
+    padding-bottom: 2px;
+    width: 100%;
+    appearance: none;
+    background-color: transparent;
+    padding-right: 18px;
+    margin: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+    border: 1px dotted black;
+    border-top: none;
+    border-left: none;
+    border-right: none;
 }
