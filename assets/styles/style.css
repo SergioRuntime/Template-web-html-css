@@ -1,5 +1,9 @@
+/* FIRST ZONE */
+
 .exam-form {
     width: 770px;
+    height: 100%;
+    margin: 16px 0;
 }
 
 .exam-form-title {
@@ -15,16 +19,15 @@
     border-right-color: rgb(218, 220, 224);
     border-right-style: solid;
     border-right-width: 1px;
-    border-top-color: rgb(218, 220, 224);
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
     border-top-style: solid;
-    border-top-width: 1px;
     border-bottom-color: rgb(218, 220, 224);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
     border-bottom-style: solid;
     border-bottom-width: 1px;
+    border-top: 8px solid rgb(134, 62, 4);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
 }
 
 .exam-form-title h1 {
@@ -105,3 +108,109 @@
     border-left: none;
     border-right: none;
 }
+
+/* SECOND ZONE */
+
+/* Questions type test */
+
+.exam-form-question {
+    margin-top: 14px;
+}
+
+.exam-form-question-test {
+    width: 768px;
+    height: 100%;
+    margin-top: 14px;
+    border-left: 8px solid rgb(66, 133, 244);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: rgb(255, 255, 255);
+    padding: 27px 0 12px 0;
+}
+
+.exam-form-question-test span {
+    font-weight: 400;
+    margin-left: 24px;
+    font-size: 16px;
+}
+
+.exam-form-question fieldset {
+    border-left: none;
+    border-top: 1px solid black;
+    border-bottom: none;
+    border-right: none;
+    margin-top: 4px;
+}
+
+.exam-form-question legend {
+    padding-right: 4px;
+    font-weight: 400;
+    color: #333;
+    letter-spacing: 0.1px;
+    margin-bottom: 4px;
+}
+
+.exam-form-question-test__options {
+    margin: 9px 0;
+}
+
+.exam-form-question-test__radio {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.exam-form-question-test__radio label {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.exam-form-question-test__radio input {
+    height: 48px;
+    margin-right: 8px;
+}
+
+/* End questions type test */
+
+/* Questions type multiple */
+
+.exam-form-question-multiple__content {
+    margin-top: 14px;
+    border-left: 8px solid rgb(66, 133, 244);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    background: rgb(255, 255, 255);
+    padding: 27px 0 12px 0;
+}
+
+.exam-form-question-multiple__content span {
+    font-weight: 400;
+    margin-left: 24px;
+    font-size: 16px;
+}
+
+.exam-form-question-multiple__options {
+    margin: 9px 0;
+}
+
+.exam-form-question-multiple__checkbox {
+    display: flex;
+    align-items: center;
+    margin-left: 24px;
+}
+
+.exam-form-question-multiple__checkbox label {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.exam-form-question-multiple__checkbox input {
+    height: 48px;
+    margin-right: 8px;
+}
+
+/* End questions multiple */

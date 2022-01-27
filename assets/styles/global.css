@@ -9,9 +9,5 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
-}
-
-html {
-    height: 100%;
+    background: rgb(243, 236, 230);
 }

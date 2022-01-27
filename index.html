@@ -17,22 +17,26 @@
         <h1>Asignatura</h1>
       </div>
       <!--*** End header ***-->
-      <div class="exam-form-container">
-        <!--*** Change "path.html", it's essencial, para que puedas enviar el formulario a la ruta destino ***-->
-        <form action="path.html" method="post">
+      <!--*** Change "path.html", it's essencial, para que puedas enviar el formulario a la ruta destino ***-->
+      <form action="path.html" method="post" id="form1">
+        <div class="exam-form-container">
           <!--*** Name zone ***-->
           <!--*** En esta zona el contenido es fijo, mantenerlo sin modificar-->
           <div class="exam-form-personal-data">
             <fieldset>
               <legend>Datos del alumno</legend>
               <div class="exam-form-personal-data__name">
-                <label for="name">Nombre</label>
-                <input
-                  type="text"
-                  name="name"
-                  id="name"
-                  placeholder="Texto de respuesta corta"
-                />
+                <div class="exam-form-personal-data__labelcontent">
+                  <label for="name">Nombre</label>
+                </div>
+                <div class="exam-form-personal-data__inputcontent">
+                  <input
+                    type="text"
+                    name="name"
+                    id="name"
+                    placeholder="Sergio"
+                  />
+                </div>
               </div>
             </fieldset>
           </div>
@@ -46,13 +50,107 @@
               <!--*** Question type test ***-->
               <div class="exam-form-question-test">
                 <!--*** Modificar el texto siguiente para cambiar la pregunta ***-->
-                <h3>Pregunta del examen:</h3>
+                <span>Pregunta del examen:</span>
                 <!--*** Modificar las opciones dependiendo de la pregunta ***-->
                 <div class="exam-form-question-test__options">
-                  <input type="radio" name="option1" id="option1" />Opción 1
-                  <input type="radio" name="option1" id="option2" />Respuesta
-                  correcta
-                  <input type="radio" name="option1" id="option3" />Opción 3
+                  <!-- HAy que tener en cuenta en las opciones cambiar:-->
+                  <!-- name: todas las opciones tienen que tener el mismo name de la pregunta-->
+                  <!-- value: valor de la opcion de la pregunta-->
+                  <!-- id: único por opcion y linkearlo con el atributo for del label-->
+                  <div class="exam-form-question-test__radio">
+                    <input
+                      type="radio"
+                      name="question1"
+                      value="1"
+                      id="radio1"
+                    />
+                    <label for="radiobtn1">Respuesta correcta 1</label>
+                  </div>
+                  <div class="exam-form-question-test__radio">
+                    <input
+                      type="radio"
+                      name="question1"
+                      value="2"
+                      id="radio2"
+                    />
+                    <label for="radiobtn2">Opcion 2</label>
+                  </div>
+                  <div class="exam-form-question-test__radio">
+                    <input
+                      type="radio"
+                      name="question1"
+                      value="3"
+                      id="radio3"
+                    />
+                    <label for="radio3">Opcion 3</label>
+                  </div>
+                </div>
+              </div>
+              <!--*** End question type test ***-->
+
+              <!--*** Question type test ***-->
+              <div class="exam-form-question-test">
+                <!--*** Modificar el texto siguiente para cambiar la pregunta ***-->
+                <span>Pregunta del examen:</span>
+                <!--*** Modificar las opciones dependiendo de la pregunta ***-->
+                <div class="exam-form-question-test__options">
+                  <!--*** Cambiar el name -->
+                  <div class="exam-form-question-test__radio">
+                    <input type="radio" name="radiobtn2" id="radiobtn1" />
+                    <label for="radiobtn1">Respuesta correcta 1</label>
+                  </div>
+                  <div class="exam-form-question-test__radio">
+                    <input type="radio" name="radiobtn2" id="radiobtn2" />
+                    <label for="radiobtn2">Opcion 2</label>
+                  </div>
+                  <div class="exam-form-question-test__radio">
+                    <input type="radio" name="radiobtn2" id="radiobtn3" />
+                    <label for="radiobtn3">Opcion 3</label>
+                  </div>
+                </div>
+              </div>
+              <!--*** End question type test ***-->
+
+              <!--*** Question type test ***-->
+              <div class="exam-form-question-test">
+                <!--*** Modificar el texto siguiente para cambiar la pregunta ***-->
+                <span>Pregunta del examen:</span>
+                <!--*** Modificar las opciones dependiendo de la pregunta ***-->
+                <div class="exam-form-question-test__options">
+                  <div class="exam-form-question-test__radio">
+                    <input type="radio" name="radiobtn3" id="radiobtn1" />
+                    <label for="radiobtn1">Respuesta correcta 1</label>
+                  </div>
+                  <div class="exam-form-question-test__radio">
+                    <input type="radio" name="radiobtn3" id="radiobtn2" />
+                    <label for="radiobtn2">Opcion 2</label>
+                  </div>
+                  <div class="exam-form-question-test__radio">
+                    <input type="radio" name="radiobtn3" id="radiobtn3" />
+                    <label for="radiobtn3">Opcion 3</label>
+                  </div>
+                </div>
+              </div>
+              <!--*** End question type test ***-->
+
+              <!--*** Question type test ***-->
+              <div class="exam-form-question-test">
+                <!--*** Modificar el texto siguiente para cambiar la pregunta ***-->
+                <span>Pregunta del examen:</span>
+                <!--*** Modificar las opciones dependiendo de la pregunta ***-->
+                <div class="exam-form-question-test__options">
+                  <div class="exam-form-question-test__radio">
+                    <input type="radio" name="radiobtn1" id="radiobtn1" />
+                    <label for="radiobtn1">Respuesta correcta 1</label>
+                  </div>
+                  <div class="exam-form-question-test__radio">
+                    <input type="radio" name="radiobtn1" id="radiobtn2" />
+                    <label for="radiobtn2">Opcion 2</label>
+                  </div>
+                  <div class="exam-form-question-test__radio">
+                    <input type="radio" name="radiobtn1" id="radiobtn3" />
+                    <label for="radiobtn3">Opcion 3</label>
+                  </div>
                 </div>
               </div>
               <!--*** End question type test ***-->
@@ -60,14 +158,22 @@
               <!--*** Question type multiple ***-->
               <div class="exam-form-question-multiple__content">
                 <!--*** Modificar el texto siguiente para cambiar la pregunta ***-->
-                <h3>Pregunta del examen:</h3>
+                <span>Pregunta del examen:</span>
                 <!--*** Modificar las opciones dependiendo de la pregunta ***-->
-                <div class="exam-form-block__options">
-                  <input type="checkbox" name="option1" id="option1" />Respuesta
-                  correcta
-                  <input type="checkbox" name="option2" id="option2" />Opción 2
-                  <input type="checkbox" name="option3" id="option3" />Respuesta
-                  correcta
+                <div class="exam-form-question-multiple__options">
+                  <!-- name cambiarlo por cada uno de los checkbox-->
+                  <div class="exam-form-question-multiple__checkbox">
+                    <input type="checkbox" name="option1" id="option1" />
+                    <label for="option1">Respuesta correcta 1</label>
+                  </div>
+                  <div class="exam-form-question-multiple__checkbox">
+                    <input type="checkbox" name="option2" id="option2" />
+                    <label for="option2">Option 2</label>
+                  </div>
+                  <div class="exam-form-question-multiple__checkbox">
+                    <input type="checkbox" name="option3" id="option3" />
+                    <label for="option3">Respuesta correcta 2</label>
+                  </div>
                 </div>
               </div>
               <!--*** End question type multiple ***-->
@@ -75,8 +181,8 @@
             </fieldset>
           </div>
           <!--*** End question zone ***-->
-        </form>
-      </div>
+        </div>
+      </form>
     </div>
     <!--*** End template ***-->
   </body>
